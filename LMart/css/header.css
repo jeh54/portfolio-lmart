@@ -1,0 +1,266 @@
+header{
+    width: 1800px;
+    height: 230px;
+    align-content: center;
+    position: relative;
+    margin:  0 auto;
+}
+header .bar{
+    width: 1200px;
+    height: 30px;
+    text-align: end;
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+    align-items: center;
+    font-family: "Noto Sans KR", serif;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+header > .mid-content{
+    position: relative;
+    width: 90%;
+    height: 100px;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+header > .mid-content .logo{
+    width: 300px;
+    height: 100px;
+    /* background-color: #CCC; */
+    margin-left: 50px;
+    align-content: center;
+}
+header > .mid-content .logo img{
+    width: 80%;
+}
+header > .mid-content .logo a{
+    width: 100%;
+    height: 100%;
+    align-content: center;
+    text-align: center;
+    display: block;
+}
+header > .mid-content > .search-box{
+    width: 500px;
+    height: 50px;
+    position: relative;
+    transition: width 500ms;
+}
+
+header > .mid-content > .search-box > input{
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    border: 2px solid gold;
+    box-sizing: border-box;
+    padding-left: 40px;
+    padding-right: 20px;
+    font-size: 18px;
+    font-weight: 400;
+}
+header > .mid-content > .search-box > input:focus{
+    outline: none;
+}
+header > .mid-content > .search-box > i{
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    font-weight: 800;
+}
+header > .mid-content > .iconbox{
+    width: 250px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+header > .mid-content > .iconbox.focus{
+    display: none;
+}
+header > .mid-content > .iconbox > .item-hm{
+    width: calc(95% / 3);
+    height: 100%;
+    align-content: center;
+    text-align: center;
+    cursor: pointer;
+}
+header > .mid-content > .iconbox > .item-hm > i{
+    font-size: 18px;
+}
+header > .mid-content > .iconbox > .item-hm > p{
+    margin: 5px;
+    font-size: 10px;
+}
+header > .menu-h{
+    width: 1200px;
+    height: 60px;
+    margin: 0 auto;
+    align-content: center;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-color: gold;
+}
+header > .menu-h > .menu-overview{
+    width: 50px;
+    height: 100%;
+    align-content: center;
+    text-align: center;
+    cursor: pointer;
+    font-size: 24px;
+}
+header > .menu-h .submenu{
+    display: none;
+    position: absolute;
+    width: 600px;
+    height: 500px;
+    top: 100%;
+    z-index: 2;
+}
+header > .menu-h .submenu > div{
+    width: 200px;
+    height: 500px;
+    background-color: #fff;
+    position: absolute;
+    overflow-y: scroll;
+}
+
+header > .menu-h > .submenu > div::-webkit-scrollbar{
+    width: 10px;
+}
+header > .menu-h > .submenu > div::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background-color: #ccc;
+}
+header > .menu-h > .submenu > div::-webkit-scrollbar-button{
+    display: none;
+}
+header .submenu .item{
+    height: 40px;
+    align-content: center;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 800;
+    cursor: pointer;
+    position: relative;
+}
+header > .menu-h  .submenu .item i{
+    display: none;
+    position: absolute;
+    right: 3px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+header > .menu-h > .submenu .item.active i{
+    display: block;
+}
+header .submenu .item.active{
+    background-color: #eee;
+}
+header > .menu-h .sub1{
+    display: none;
+}
+header > .menu-h .sub2{
+    left: 200px;
+    display: none;
+}
+header > .menu-h .sub3{
+    left: 400px;
+    display: none;
+}
+header > .menu-h > .menu{
+    display: flex;
+    margin-left: 30px;
+    width: 90%;
+    height: 50px;
+    align-items: center;
+    justify-content: space-around;
+}
+header > .menu-h > .menu li{
+    height: 100%;
+    align-content: center;
+}
+header > .menu-h > .menu a{
+    padding: 0 30px;
+    width: max-content;
+    height: 80%;
+    display: inline-block;
+    text-align: center;
+    align-content: center;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+header > .menu-h > .menu a:hover{
+    text-decoration: none
+}
+main{
+    width: 1500px;
+    /* background-color: #ddd; */
+    margin: 0 auto;
+}
+
+
+
+@media (max-width: 1700px){
+    header{
+        width: 100%;
+    }
+    header .bar, header > .menu-h {
+        width: 80%;
+    }
+}
+@media (max-width: 1300px){
+    header > .mid-content > .search-box{
+        width: 100px;
+    }
+}
+@media (max-width: 900px){
+    header > .mid-content > .iconbox{
+        width: 15%;
+    }
+    header > .mid-content > .iconbox > .item-hm > p{
+        display: none;
+    }
+    header > .mid-content{
+        width: 95%;
+    }
+    header .bar, header > .menu-h {
+        width: 95%;
+    }
+    header .menu > li:nth-last-child(1){
+        display: none;
+    }
+}
+@media (max-width: 700px){
+    header{
+        height: max-content;
+        padding: 30px 0;
+    }
+    header > .mid-content{
+        flex-direction: column;
+        height: max-content;
+    }
+    header > .mid-content .logo{
+        margin: 0;
+    }
+    header > .mid-content > .iconbox{
+        width: 250px;
+    }
+    header > .mid-content > .iconbox > .item-hm > p{
+        display: block;
+    }
+    header .menu > li:nth-last-child(2){
+        display: none;
+    }
+}
+

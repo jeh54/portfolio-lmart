@@ -1,0 +1,49 @@
+.content1{
+    /* width: 1500px; */
+    height: 50vh;
+}
+.content1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.content1 .swiper-slide{
+    position: relative;
+    cursor: pointer;
+}
+.content1 .swiper-slide > img{
+    position: absolute;
+    z-index: 0;
+}
+.content1 .swiper-slide .cover{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 50%;
+    bottom: 0;
+    background: linear-gradient(#0000, #000f);
+    color: white;
+    align-content: center;
+}
+.content1 .swiper-slide .cover h4{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.swiper-pagination > .swiper-pagination-bullet{
+    opacity: 0.6;
+}
+.swiper-pagination-bullet.swiper-pagination-bullet-active{
+    opacity: 0.9;
+    background-color: #ddd;
+    width: 10px;
+    height: 10px;
+}
+
+@media (max-width: 1500px){
+    body > main{
+        width: 100%;
+    }
+    main > div{
+        width: 100%;
+    }
+}

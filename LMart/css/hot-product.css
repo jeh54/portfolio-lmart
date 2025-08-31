@@ -1,0 +1,193 @@
+.hot{
+    width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 120px;
+}
+.hot .itembox{
+    position: relative;
+    display: grid;   
+    grid-template-columns: repeat(4, 23%);
+    justify-content: space-between;
+    gap: 30px;
+}
+.hot .itembox .button{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    /* border: 1px solid #000; */
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    align-content: center;
+    font-size: 24px;
+    border-radius: 50%;
+    background-color: gold;
+    color: #fff;
+    cursor: pointer;
+}
+.hot .itembox .button .hint{
+    position: absolute;
+    left: 50%;
+    top: 50px;
+    background-color: #000a;
+    width: max-content;
+    padding: 3px 5px;
+    font-size: 15px;
+    transform: translateX(-50%);
+    border-radius: 5px;
+    cursor: default;
+    display: none;
+    user-select: none;
+}
+.hot .itembox .button .hint > div{
+    position: absolute;
+    left: 50%;
+    top: -10px;
+    clip-path: polygon(50% 30%, 0% 100%, 100% 100%);
+    background-color: #000a;
+    width: 12px;
+    height: 10px;    
+    transform: translateX(-50%);
+}
+.hot .item{
+    width: 100%;
+    position: relative;
+    box-shadow: 3px 3px 6px #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+.hot .item .label{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 30px;
+    height: 30px;
+    border: 2px solid red;
+    background-color: #fff;
+    border-radius: 50%;
+    font-size: 12px;
+    font-weight: 800;
+    text-align: center;
+    align-content: center;
+    line-height: 90%;
+    display: none;
+}
+.hot .item .imgbox{
+    width: 100%;
+    height: 60%;
+    border-radius: 5px;
+}
+.hot .item .imgbox img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 5px;
+}
+.hot .item .iteminfo{
+    padding-top: 30px;
+    height: 40%;
+    position: relative;
+}
+.hot .item .iconbox1{
+    position: absolute;
+    top: 8px;
+    left: 0;
+    display: flex;
+    gap: 4px;
+}
+.hot .item .iconbox1 span{
+    padding: 1px 3px;
+    background-color: gold;
+    border-radius: 4px;
+}
+.hot .item .discount{
+    font-size: 24px;
+    font-weight: 600;
+    color: red;
+}
+.hot .item .price{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.hot .item .price .prv{
+    font-size: 20px;
+    font-weight: 400;
+    color: grey;
+    text-decoration: line-through;
+}
+.hot .item .price .now{
+    font-size: 24px;
+    font-weight: 800;
+}
+.hot .item .rate{
+    margin-bottom: 20px;
+}
+.hot .item .iconbox2{
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    /* border: 1px solid #000; */
+    text-align: center;
+    align-content: center;
+}
+.hot .item .iconbox2 > div{
+    position: relative;
+}
+.hot .item .iconbox2 .icon{
+    display: none;
+    color: red;
+    font-size: 16px;
+    font-weight: 800;
+    cursor: pointer;
+}
+.hot .item .iconbox2 .icon.active{
+    display: block;
+}
+.hot .item .iconbox2 .hint{
+    user-select: none;
+    position: absolute;
+    display: none;
+    top: 30px;
+    left: 50%;
+    width: max-content;
+    padding: 2px 5px;
+    transform: translateX(-50%);
+    background-color: #000a;
+    color: #fff;
+    border-radius: 4px;
+}
+.hot .item .iconbox2 .hint > div{
+    position: absolute;
+    left: 50%;
+    top: -10px;
+    clip-path: polygon(50% 30%, 0% 100%, 100% 100%);
+    background-color: #000a;
+    width: 12px;
+    height: 10px;    
+    transform: translateX(-50%);
+}
+
+
+@media (max-width: 1500px){
+    main{
+        width: 80%;
+    }
+    .hot{
+        width: 100%;
+    }
+    .hot .itembox{
+        margin: 0 auto;
+        grid-template-columns: repeat(3, 28%);
+    }
+}
+@media (max-width: 1000px){
+    .hot .itembox{
+        grid-template-columns: repeat(2, 48%);
+    }
+}

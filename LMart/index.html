@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js" integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/top.css">
+    <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="css/content1.css">
+    <link rel="stylesheet" href="css/content2.css">
+    <link rel="stylesheet" href="css/content3.css">
+    <link rel="stylesheet" href="css/history.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+    <header>
+        <div class="bar">
+            <a href="#">로그인/회원가입</a>
+            <a href="#">고객센터</a>
+        </div>
+        <div class="mid-content">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo2.png" alt="">
+                </a>
+            </div>
+            <div class="search-box">
+                <input type="text" id="search-box-header">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="iconbox">
+                <div class="item-hm">
+                    <i class="fa-solid fa-user"></i>
+                    <p>마이페이지</p>
+                </div>
+                <div class="item-hm">
+                    <i class="fa-solid fa-heart"></i>
+                    <p>찜</p>
+                </div>
+                <div class="item-hm">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <p>장바구니</p>
+                </div>
+            </div>
+        </div>
+        <div class="menu-h">
+            <div class="menu-overview">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="submenu">
+                <div class="sub1">
+                    <!-- <div class="item">
+                        <span>과일</span>
+                        <i class="fa-solid fa-caret-right"></i>
+                    </div>
+                    <div class="item">
+                        <span>채소</span>
+                        <i class="fa-solid fa-caret-right"></i>
+                    </div>
+                    <div class="item">
+                        <span>쌀/잡곡/견과</span>
+                        <i class="fa-solid fa-caret-right"></i>
+                    </div>
+                    <div class="item">
+                        <span>해산물/건해산</span>
+                        <i class="fa-solid fa-caret-right"></i>
+                    </div>
+                    <div class="item">
+                        <span>우유/유제품</span>
+                        <i class="fa-solid fa-caret-right"></i>
+                    </div>
+                    <div class="item">
+                        <span>밀키트/간편식</span>
+                        <i class="fa-solid fa-caret-right"></i>
+                    </div> -->
+                </div>
+                <div class="sub2">
+                    <!-- <div class="item">
+                        <span>사과/배</span>
+                        <i class="fa-solid fa-caret-right"></i>
+                    </div>
+                    <div class="item">
+                        <span>감귤/만감류</span>
+                        <i class="fa-solid fa-caret-right"></i>
+                    </div>
+                    <div class="item">
+                        <span>수박/멜론/참외/토마토</span>
+                        <i class="fa-solid fa-caret-right"></i>
+                    </div> -->
+                </div>
+                <div class="sub3">
+                    <div class="item">
+                        <span>사과</span>
+                    </div>
+                    <div class="item">
+                        <span>배</span>
+                    </div>
+                </div>
+            </div>
+            <ul class="menu">
+                <li>
+                    <a href="event.html">이벤트</a>
+                </li>
+                <li>
+                    <a href="new-product.html">신상품</a>
+                </li>
+                <li>
+                    <a href="hot-product.html">인기상품</a>
+                </li>
+                <li>
+                    <a href="#">택배배송</a>
+                </li>
+                <li>
+                    <a href="#">회사소개</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div class="content1">
+            <div class="swiper item-preview">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="images/coupon.jpg" alt="">
+                        <div class="cover">
+                            <h4>회원 가입 이벤트</h4>
+                            <p>회원 가입 시 10%할인 쿠폰 증정</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/fruit.jpg" alt="">
+                        <div class="cover">
+                            <h4>과일 채소류 전품목 30% 할인</h4>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/cake.jpg" alt="">
+                        <div class="cover">
+                            <h4>LMart 개업 1주년 기념 행사</h4>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/icecream.jpg" alt="">
+                        <div class="cover">
+                            <h4>아이스크림류 50% 할인</h4>
+                            <P>(일부 품목 제외)</P>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/watermelon.jpg" alt="">
+                        <div class="cover">
+                            <h4>12brix 이상 엄선된 꿀수박</h4>
+                            <P>씨 없는 수박/애플수박/노란수박</P>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <div class="content2">
+            <div class="event-list">
+                <div class="event-menu">
+                    <div class="button active">
+                        오늘의 행사
+                    </div>
+                    <div class="button">
+                        인기 상품
+                    </div>
+                    <div class="button">
+                        1+1
+                    </div>
+                    <div class="button">
+                        이벤트 할인
+                    </div>
+                </div>
+                <div class="event-viewport">
+                    <div class="swiper event-item">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="item">
+                                    <img src="images/meat.jpg" alt="">
+                                    <div class="textbox">
+                                        <h4>한우 등심 구이용(1++등급)(250g)</h4>
+                                        <h3>62,500원</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="item">
+                                    <img src="images/ttk.jpg" alt="">
+                                    <div class="textbox">
+                                        <h4>CJ 미정당 순쌀떡볶이 (401G)</h4>
+                                        <h3>4,980원</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="item">
+                                    <img src="images/tissue.jpg" alt="">
+                                    <div class="textbox">
+                                        <h4>깨끗한나라 순수화장지 (40M*30롤)</h4>
+                                        <h3>30,300원</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="item">
+                                    <img src="images/cheese.jpg" alt="">
+                                    <div class="textbox">
+                                        <h4>매일유업 상하치즈 뼈로가는 칼슘치즈 (270G)</h4>
+                                        <h3>9,980원</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="item">
+                                    <img src="images/moo.jpg" alt="">
+                                    <div class="textbox">
+                                        <h4>무화과 (1KG/박스)</h4>
+                                        <h3>9,990원</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-custom-next">
+                            <i class="fa-solid fa-angle-right"></i>
+                        </div>
+                        <div class="swiper-custom-prev">
+                            <i class="fa-solid fa-angle-left"></i>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>            
+            </div>
+        </div>
+        <div class="content3">
+            <h2>추천 상품</h2>
+            <div class="recommendation">
+                <div class="menu-item-type">
+                    <div class="button active">과일</div>
+                    <div class="button">채소</div>
+                    <div class="button">쌀/잡곡/견과</div>
+                    <div class="button">정육/계란류</div>
+                    <div class="button">수산물/건해산</div>
+                    <div class="button">우유/유제품</div>
+                    <div class="button">밀키트/간편식</div>
+                    <div class="button">김치/반찬/델리</div>
+                    <div class="button">생수/음료/주류</div>
+                    <div class="button">커피/원두/차</div>
+                    <div class="button">면류/통조림</div>
+                    <div class="button">양념/오일</div>
+                    <div class="button">과자/간식</div>
+                    <div class="button">건강식품</div>
+                    <div class="button">친환경/유기농</div>
+                    <div class="button">제지/위생/건강</div>
+                </div>
+                <div class="recommendation-view">
+                    <div class="recommendation-item">
+                        <img src="images/cherry.jpg" alt="">
+                        <h4>캐나다산 체리 (550G/박스)</h3>
+                        <div class="price">
+                            <h3>12,990원</h3>
+                        </div>
+                        <div class="discount">
+                            <h3>30%</h3><h3>9,090원</h3>
+                        </div>
+                        <div class="rate">
+                            <i class="fa-solid fa-star"></i>
+                            <span>4.8</span>
+                        </div>
+                        <div class="button">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="recommendation-item">
+                        <img src="images/blueberry.jpg" alt="">
+                        <h4>미국산 슈퍼크런치 블루베리 (310G/팩)</h3>
+                        <div class="price">
+                            <h3>10,990원</h3>
+                        </div>
+                        <div class="discount">
+                            <h3>10%</h3><h3>9,900원</h3>
+                        </div>
+                        <div class="rate">
+                            <i class="fa-solid fa-star"></i>
+                            <span>4.8</span>
+                        </div>
+                        <div class="button">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="recommendation-item">
+                        <img src="images/banana.jpg" alt="">
+                        <h4>B750 바나나 (900G 내외)</h3>
+                        <div class="price">
+                            <h3>2,990원</h3>
+                        </div>
+                        <div class="discount">
+                            <h3>17%</h3><h3>2,490원</h3>
+                        </div>
+                        <div class="rate">
+                            <i class="fa-solid fa-star"></i>
+                            <span>4.8</span>
+                        </div>
+                        <div class="button">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="recommendation-item">
+                        <img src="images/avocado.jpg" alt="">
+                        <h4>페루산 아보카도 (개)</h3>
+                        <div class="price">
+                            <h3>1,590원</h3>
+                        </div>
+                        <div class="discount">
+                            <h3>10%</h3><h3>1,400원</h3>
+                        </div>
+                        <div class="rate">
+                            <i class="fa-solid fa-star"></i>
+                            <span>4.8</span>
+                        </div>
+                        <div class="button">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="recommendation-item">
+                        <img src="images/gyul.jpg" alt="">
+                        <h4>제주 GAP 하우스 감귤 (1.2KG/팩)</h3>
+                        <div class="price">
+                            <h3>13,990원</h3>
+                        </div>
+                        <div class="discount">
+                            <h3>10%</h3><h3>12,590원</h3>
+                        </div>
+                        <div class="rate">
+                            <i class="fa-solid fa-star"></i>
+                            <span>4.8</span>
+                        </div>
+                        <div class="button">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="recommendation-item">
+                        <img src="images/moo.jpg" alt="">
+                        <h4>무화과 (1KG/박스)</h3>
+                        <div class="price">
+                            <h3>11,000원</h3>
+                        </div>
+                        <div class="discount">
+                            <h3>10%</h3><h3>9,900원</h3>
+                        </div>
+                        <div class="rate">
+                            <i class="fa-solid fa-star"></i>
+                            <span>4.8</span>
+                        </div>
+                        <div class="button">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="recommendation-item">
+                        <img src="images/orange.jpg" alt="">
+                        <h4>호주산 오렌지 (6~10입/봉)</h3>
+                        <div class="price">
+                            <h3>11,000원</h3>
+                        </div>
+                        <div class="discount">
+                            <h3>10%</h3><h3>9,900원</h3>
+                        </div>
+                        <div class="rate">
+                            <i class="fa-solid fa-star"></i>
+                            <span>4.8</span>
+                        </div>
+                        <div class="button">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="recommendation-item">
+                        <img src="images/lemon.jpg" alt="">
+                        <h4>칠레산 레몬 (5-10입/봉)</h3>
+                        <div class="price">
+                            <h3>5,990원</h3>
+                        </div>
+                        <div class="discount">
+                            <h3>10%</h3><h3>5,390원</h3>
+                        </div>
+                        <div class="rate">
+                            <i class="fa-solid fa-star"></i>
+                            <span>4.8</span>
+                        </div>
+                        <div class="button">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="menu-sitemap">
+            <div class="footer-menu">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/logo2-removebg-preview.png" alt="">
+                    </a>
+                </div>
+                <ul>
+                    <li>
+                        <a href="#">
+                            이벤트
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            신상품
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            인기상품
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            택배배송
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            회사소개
+                        </a>
+                    </li>
+                </ul>
+                <div class="searchbox">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text">
+                </div>
+            </div>
+            <div class="sitemap">
+                <h2>사이트맵</h2>
+                <div class="itembox">
+                    <div class="item">
+                        <a href="#">            
+                            <i class="fa-solid fa-store"></i>
+                            <p>LMart Shopping</p>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#">            
+                            <i class="fa-solid fa-atom"></i>
+                            <p>LMart Electronics</p>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#">            
+                            <i class="fa-solid fa-utensils"></i>
+                            <p>LMart Food</p>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#">            
+                            <i class="fa-solid fa-truck-fast"></i>
+                            <p>LMart Retail</p>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#">            
+                            <i class="fa-solid fa-head-side-cough"></i>
+                            <p>고객센터</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 L-Mart.Co.Ltd. All rights reserved.</p>
+        </div>
+    </footer>
+    <aside class="history">
+        <div class="bg"></div>
+        <div class="history-box">
+            <h2>최근에 본 상품</h2>
+            <div class="close">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+            <div class="itembox">
+                <a href="#">                        
+                    <div class="item">
+                        <div class="imgbox">
+                            <img src="https://picsum.photos/id/22/1000/1000" alt="">
+                        </div>
+                        <div class="product-info">
+                            <div class="title">
+                                [농심] 너구리 5개입
+                            </div>
+                            <div class="price">
+                                4060원
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="button">
+                <i class="fa-regular fa-square-plus"></i>
+            </div>
+        </div>
+    </aside>
+
+    <script src="js/mainpage.js"></script>
+    <script src="js/top.js"></script>
+    <script src="js/history.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/footer.js"></script>
+    
+</body>
+</html>

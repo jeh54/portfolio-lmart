@@ -1,0 +1,238 @@
+[class*=content-event]{
+    /* border: 1px solid #000; */
+    width: 1300px;
+    margin: 0 auto;
+}
+.content-event1{
+    position: relative;
+    margin-bottom: 80px;
+}
+.content-event1 .swiper{
+    margin-bottom: 20px;
+}
+.content-event1 .swiper .swiper-slide{
+    width: 600px;
+    
+    cursor: pointer;
+}
+.content-event1 .control-box{
+    position: absolute;
+    left: 50%;
+    bottom: 5px;
+    transform: translateX(-50%);
+    margin: 0 auto;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    font-size: 17px;
+    font-weight: 800;
+    z-index: 1;
+}
+.content-event1 .control-box > div{
+    background-color: #ccca;
+    border-radius: 8px;
+    padding: 0 8px;
+}
+.content-event1 .control-box > [class*=button]{
+    cursor: pointer;
+}
+.content-event1 .control-box > [class*=button]:hover{
+    background-color: #000a;
+    color: #ddd;
+}
+.content-event1 .swiper-pagination{
+    width: max-content;
+    position: static;
+}
+.content-event1 img{
+    width: 100%;
+    aspect-ratio:  2 / 1;
+}
+
+.coupon{
+    width: 95%;
+    margin: 0 auto;
+}
+.coupon > .title{
+    font-size: 28px;
+    display: flex;
+    gap: 10px;
+}
+.coupon > .title > i{
+    vertical-align: middle;
+}
+.coupon .c-menu{
+    /* border: 1px solid #000; */
+    height: max-content;
+    padding: 10px 0;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.coupon .c-menu .option{
+    width: max-content;
+    font-size: 18px;
+    font-weight: 800;
+    background-color: #ddd;
+    padding: 4px 12px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+.coupon .c-menu .option.active{
+    background-color: gold;
+}
+.coupon .itembox{
+    position: relative;
+    /* border: 1px solid #000; */
+    /* height: 600px; */
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+}
+.coupon .itembox .item{
+    position: relative;
+    border: 3px dashed #000;
+    border-radius: 8px;
+    height: 180px;
+    cursor: pointer;
+    padding: 20px 7%;
+    box-sizing: border-box;
+    align-content: center;
+}
+.coupon .itembox .item h4{
+    margin-bottom: 20px;
+    margin-top: 15px;
+}
+.coupon .itembox .item p{
+    font-size: 16px;
+    color: #555;
+    font-weight: 500;
+}
+.coupon .itembox .item .feature{
+    display: flex;
+    position: absolute;
+    width: 80%;
+    height: 20px;
+    top: 15px;
+    gap: 5px;
+    /* border: 1px solid #000; */
+}
+.coupon .itembox .item .feature > div{
+    color: #fff;
+    background-color: red;
+    border-radius: 5px;
+    width: max-content;
+    height: 100%;
+    padding: 0 10px;
+    /* display: none; */
+}
+.coupon .itembox img{
+    position: absolute;
+    width: 98%;
+    height: 98%;
+    /* object-fit: contain; */
+}
+
+.content-event2{
+    /* border: 1px solid #000; */
+    margin-bottom: 120px;
+}
+.content-event2 .title{
+    /* border: 1px solid #000; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content-event2 .title p{
+    font-size: 20px;
+    /* font-fsamily: "Black Han Sans", sans-serif; */
+    text-decoration: underline 2px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.content-event2 .title p:hover{
+    text-decoration: underline 3px;
+}
+.content-event2 .itembox{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+.content-event2 .itembox .item{
+    width: 100%;
+    aspect-ratio: 1;
+    /* border: 1px solid #000; */
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 10%;
+    background-color: #d4d4d455;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px #0003;
+}
+.content-event2 .itembox .item img{
+    width: 100%;
+    aspect-ratio: 1;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 10px;
+    object-fit: cover;
+}
+.content-event2 .itembox .item p{
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.content-event3 .title{
+    position: relative;
+}
+.content-event3 .title h4{
+    /* width: max-content; */
+    border-top: 5px double;
+    border-bottom: 5px double;
+}
+.content-event3 .title p{
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    text-decoration: underline 1px;
+    margin-right: 10px;
+    cursor: pointer;
+    font-weight: 600;
+}
+.content-event3 .title p:hover{
+    text-decoration: underline 2px;
+}
+.content-event3 > div{
+    display: flex;
+    gap: 30px;
+}
+.content-event3 .chart{
+    width: 60%;
+    padding: 2% 0;
+}
+.content-event3 .chart-list{
+    display: grid;
+}
+.content-event3 .chart-list .item{
+    height: 40px;
+    /* border-top: solid 2px #666; */
+    border-bottom: solid 2px #666;
+    box-sizing: border-box;
+    align-content: center;
+    font-size: 15px;
+}
+.content-event3 .ad{
+    width: 40%;
+    aspect-ratio: 1;
+}
+.content-event3 .ad img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+}

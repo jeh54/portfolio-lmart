@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js" integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/top.css">
+    <link rel="stylesheet" href="css/history.css">
+    <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/hot-product.css">
+    <link rel="stylesheet" href="css/category.css">
+</head>
+<body>
+    <header></header>
+    <main>
+        <div class="category">
+            <!-- <div class="button button-l">
+                <i class="fa-solid fa-chevron-left"></i>
+            </div>
+            <div class="button button-r active">
+                <i class="fa-solid fa-chevron-right"></i>
+            </div>
+            <div class="category-menu">
+                <div class="itembox">
+                    <div class="item">
+                        
+                    </div> 
+                </div>
+            </div> -->
+        </div>
+        <div class="hot hot1">
+            <div class="title">
+                <h2>실시간 인기상품</h2>
+            </div>
+            <div class="itembox">
+                <div class="button">
+                    <i class="fa-solid fa-arrow-down"></i>
+                    <div class="hint">
+                        <div></div>
+                        상품 더보기
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="label">TOP<br>1</div>
+                    <div class="imgbox">
+                        <img src="images/egg.jpg" alt="">
+                    </div>
+                    <div class="iteminfo">
+                        <div class="iconbox1">
+                            <span>이벤트</span>
+                            <span>인기상품</span>
+                            <span>1+1</span>
+                        </div>
+                        <div class="iconbox2">
+                            <div>
+                                <div class="icon empty active">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <div class="icon filled">
+                                    <i class="fa-solid fa-heart"></i>
+                                </div>
+                                <div class="hint">
+                                    <div></div>
+                                    <span>찜하기</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="title">
+                            <h3>행복생생란(대란, 30입) (1.56KG)</h3>
+                        </div>
+                        <!-- <div class="discount">
+                            20%
+                        </div> -->
+                        <div class="price">
+                            <!-- <div class="prv">
+                                <span>2000원</span>
+                            </div> -->
+                            <div class="now">7,990원</div>
+                        </div>
+                        <div class="rate">
+                            <i class="fa-solid fa-star"></i>
+                            <span>4.9 (1,200)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="label">TOP<br>1</div>
+                    <div class="imgbox">
+                        <img src="images/crab3.jpg" alt="">
+                    </div>
+                    <div class="iteminfo">
+                        <div class="iconbox1">
+                            <span>이벤트</span>
+                            <span>인기상품</span>
+                            <span>1+1</span>
+                        </div>
+                        <div class="iconbox2">
+                            <div>
+                                <div class="icon empty active">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <div class="icon filled">
+                                    <i class="fa-solid fa-heart"></i>
+                                </div>
+                                <div class="hint">
+                                    <div></div>
+                                    <span>찜하기</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="title">
+                            <h3>꽃게 <br>(3000G)</h3>
+                        </div>
+                        <!-- <div class="discount">
+                            20%
+                        </div> -->
+                        <div class="price">
+                            <!-- <div class="prv">
+                                <span>2000원</span>
+                            </div> -->
+                            <div class="now">29,760원</div>
+                        </div>
+                        <div class="rate">
+                            <i class="fa-solid fa-star"></i>
+                            <span>4.9 (1,200)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="label">TOP<br>1</div>
+                    <div class="imgbox">
+                        <img src="images/pizza.jpg" alt="">
+                    </div>
+                    <div class="iteminfo">
+                        <div class="iconbox1">
+                            <span>이벤트</span>
+                            <span>인기상품</span>
+                            <span>1+1</span>
+                        </div>
+                        <div class="iconbox2">
+                            <div>
+                                <div class="icon empty active">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <div class="icon filled">
+                                    <i class="fa-solid fa-heart"></i>
+                                </div>
+                                <div class="hint">
+                                    <div></div>
+                                    <span>찜하기</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="title">
+                            <h3>오뚜기 불고기피자 <br>(396G)</h3>
+                        </div>
+                        <!-- <div class="discount">
+                            20%
+                        </div> -->
+                        <div class="price">
+                            <!-- <div class="prv">
+                                <span>2000원</span>
+                            </div> -->
+                            <div class="now">9,980원</div>
+                        </div>
+                        <div class="rate">
+                            <i class="fa-solid fa-star"></i>
+                            <span>4.9 (1,200)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="label">TOP<br>1</div>
+                    <div class="imgbox">
+                        <img src="images/gim.jpg" alt="">
+                    </div>
+                    <div class="iteminfo">
+                        <div class="iconbox1">
+                            <span>이벤트</span>
+                            <span>인기상품</span>
+                            <span>1+1</span>
+                        </div>
+                        <div class="iconbox2">
+                            <div>
+                                <div class="icon empty active">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <div class="icon filled">
+                                    <i class="fa-solid fa-heart"></i>
+                                </div>
+                                <div class="hint">
+                                    <div></div>
+                                    <span>찜하기</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="title">
+                            <h3>CJ 명가 파래김<br>(4G*12봉)</h3>
+                        </div>
+                        <!-- <div class="discount">
+                            20%
+                        </div> -->
+                        <div class="price">
+                            <!-- <div class="prv">
+                                <span>2000원</span>
+                            </div> -->
+                            <div class="now">8,990원</div>
+                        </div>
+                        <div class="rate">
+                            <i class="fa-solid fa-star"></i>
+                            <span>4.9 (1,200)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="label">TOP<br>1</div>
+                    <div class="imgbox">
+                        <img src="images/jeon.jpg" alt="">
+                    </div>
+                    <div class="iteminfo">
+                        <div class="iconbox1">
+                            <span>이벤트</span>
+                            <span>인기상품</span>
+                            <span>1+1</span>
+                        </div>
+                        <div class="iconbox2">
+                            <div>
+                                <div class="icon empty active">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <div class="icon filled">
+                                    <i class="fa-solid fa-heart"></i>
+                                </div>
+                                <div class="hint">
+                                    <div></div>
+                                    <span>찜하기</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="title">
+                            <h3>풀무원 철판 오징어부추전 <br>(300G)</h3>
+                        </div>
+                        <!-- <div class="discount">
+                            20%
+                        </div> -->
+                        <div class="price">
+                            <!-- <div class="prv">
+                                <span>2000원</span>
+                            </div> -->
+                            <div class="now">5,980원</div>
+                        </div>
+                        <div class="rate">
+                            <i class="fa-solid fa-star"></i>
+                            <span>4.9 (1,200)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="label">TOP<br>1</div>
+                    <div class="imgbox">
+                        <img src="images/steak.jpg" alt="">
+                    </div>
+                    <div class="iteminfo">
+                        <div class="iconbox1">
+                            <span>이벤트</span>
+                            <span>인기상품</span>
+                            <span>1+1</span>
+                        </div>
+                        <div class="iconbox2">
+                            <div>
+                                <div class="icon empty active">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <div class="icon filled">
+                                    <i class="fa-solid fa-heart"></i>
+                                </div>
+                                <div class="hint">
+                                    <div></div>
+                                    <span>찜하기</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="title">
+                            <h3>삼립 시티델리 육즙가득 함박스테이크 (150G)</h3>
+                        </div>
+                        <!-- <div class="discount">
+                            20%
+                        </div> -->
+                        <div class="price">
+                            <!-- <div class="prv">
+                                <span>2000원</span>
+                            </div> -->
+                            <div class="now">3,980원</div>
+                        </div>
+                        <div class="rate">
+                            <i class="fa-solid fa-star"></i>
+                            <span>4.9 (1,200)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="label">TOP<br>1</div>
+                    <div class="imgbox">
+                        <img src="images/pong.jpg" alt="">
+                    </div>
+                    <div class="iteminfo">
+                        <div class="iconbox1">
+                            <span>이벤트</span>
+                            <span>인기상품</span>
+                            <span>1+1</span>
+                        </div>
+                        <div class="iconbox2">
+                            <div>
+                                <div class="icon empty active">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <div class="icon filled">
+                                    <i class="fa-solid fa-heart"></i>
+                                </div>
+                                <div class="hint">
+                                    <div></div>
+                                    <span>찜하기</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="title">
+                            <h3>수퍼테크 액체세제 리필 (일반) (2.6L)</h3>
+                        </div>
+                        <!-- <div class="discount">
+                            20%
+                        </div> -->
+                        <div class="price">
+                            <!-- <div class="prv">
+                                <span>2000원</span>
+                            </div> -->
+                            <div class="now">13,300원</div>
+                        </div>
+                        <div class="rate">
+                            <i class="fa-solid fa-star"></i>
+                            <span>4.9 (1,200)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="label">TOP<br>1</div>
+                    <div class="imgbox">
+                        <img src="images/loc.jpg" alt="">
+                    </div>
+                    <div class="iteminfo">
+                        <div class="iconbox1">
+                            <span>이벤트</span>
+                            <span>인기상품</span>
+                            <span>1+1</span>
+                        </div>
+                        <div class="iconbox2">
+                            <div>
+                                <div class="icon empty active">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <div class="icon filled">
+                                    <i class="fa-solid fa-heart"></i>
+                                </div>
+                                <div class="hint">
+                                    <div></div>
+                                    <span>찜하기</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="title">
+                            <h3>유한락스 곰팡이 제거제 (718ML*2)</h3>
+                        </div>
+                        <!-- <div class="discount">
+                            20%
+                        </div> -->
+                        <div class="price">
+                            <!-- <div class="prv">
+                                <span>2000원</span>
+                            </div> -->
+                            <div class="now">7,200원</div>
+                        </div>
+                        <div class="rate">
+                            <i class="fa-solid fa-star"></i>
+                            <span>4.9 (1,200)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hot hot2">
+            <div class="title">
+                <h2>인기상품 TOP100</h2>
+            </div>
+            <div class="itembox">
+                <div class="button">
+                    <i class="fa-solid fa-arrow-down"></i>
+                    <div class="hint">
+                        <div></div>
+                        상품 더보기
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="label">TOP<br>1</div>
+                    <div class="imgbox">
+                        <img src="images/egg.jpg" alt="">
+                    </div>
+                    <div class="iteminfo">
+                        <div class="iconbox1">
+                            <span>이벤트</span>
+                            <span>인기상품</span>
+                            <span>1+1</span>
+                        </div>
+                        <div class="iconbox2">
+                            <div>
+                                <div class="icon empty active">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <div class="icon filled">
+                                    <i class="fa-solid fa-heart"></i>
+                                </div>
+                                <div class="hint">
+                                    <div></div>
+                                    <span>찜하기</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="title">
+                            <h3>행복생생란(대란, 30입) (1.56KG)</h3>
+                        </div>
+                        <!-- <div class="discount">
+                            20%
+                        </div> -->
+                        <div class="price">
+                            <!-- <div class="prv">
+                                <span>2000원</span>
+                            </div> -->
+                            <div class="now">7,990원</div>
+                        </div>
+                        <div class="rate">
+                            <i class="fa-solid fa-star"></i>
+                            <span>4.9 (1,200)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="label">TOP<br>1</div>
+                    <div class="imgbox">
+                        <img src="images/crab3.jpg" alt="">
+                    </div>
+                    <div class="iteminfo">
+                        <div class="iconbox1">
+                            <span>이벤트</span>
+                            <span>인기상품</span>
+                            <span>1+1</span>
+                        </div>
+                        <div class="iconbox2">
+                            <div>
+                                <div class="icon empty active">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <div class="icon filled">
+                                    <i class="fa-solid fa-heart"></i>
+                                </div>
+                                <div class="hint">
+                                    <div></div>
+                                    <span>찜하기</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="title">
+                            <h3>꽃게 <br>(3000G)</h3>
+                        </div>
+                        <!-- <div class="discount">
+                            20%
+                        </div> -->
+                        <div class="price">
+                            <!-- <div class="prv">
+                                <span>2000원</span>
+                            </div> -->
+                            <div class="now">29,760원</div>
+                        </div>
+                        <div class="rate">
+                            <i class="fa-solid fa-star"></i>
+                            <span>4.9 (1,200)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="label">TOP<br>1</div>
+                    <div class="imgbox">
+                        <img src="images/pizza.jpg" alt="">
+                    </div>
+                    <div class="iteminfo">
+                        <div class="iconbox1">
+                            <span>이벤트</span>
+                            <span>인기상품</span>
+                            <span>1+1</span>
+                        </div>
+                        <div class="iconbox2">
+                            <div>
+                                <div class="icon empty active">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <div class="icon filled">
+                                    <i class="fa-solid fa-heart"></i>
+                                </div>
+                                <div class="hint">
+                                    <div></div>
+                                    <span>찜하기</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="title">
+                            <h3>오뚜기 불고기피자 <br>(396G)</h3>
+                        </div>
+                        <!-- <div class="discount">
+                            20%
+                        </div> -->
+                        <div class="price">
+                            <!-- <div class="prv">
+                                <span>2000원</span>
+                            </div> -->
+                            <div class="now">9,980원</div>
+                        </div>
+                        <div class="rate">
+                            <i class="fa-solid fa-star"></i>
+                            <span>4.9 (1,200)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="label">TOP<br>1</div>
+                    <div class="imgbox">
+                        <img src="images/gim.jpg" alt="">
+                    </div>
+                    <div class="iteminfo">
+                        <div class="iconbox1">
+                            <span>이벤트</span>
+                            <span>인기상품</span>
+                            <span>1+1</span>
+                        </div>
+                        <div class="iconbox2">
+                            <div>
+                                <div class="icon empty active">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <div class="icon filled">
+                                    <i class="fa-solid fa-heart"></i>
+                                </div>
+                                <div class="hint">
+                                    <div></div>
+                                    <span>찜하기</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="title">
+                            <h3>CJ 명가 파래김<br>(4G*12봉)</h3>
+                        </div>
+                        <!-- <div class="discount">
+                            20%
+                        </div> -->
+                        <div class="price">
+                            <!-- <div class="prv">
+                                <span>2000원</span>
+                            </div> -->
+                            <div class="now">8,990원</div>
+                        </div>
+                        <div class="rate">
+                            <i class="fa-solid fa-star"></i>
+                            <span>4.9 (1,200)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="label">TOP<br>1</div>
+                    <div class="imgbox">
+                        <img src="images/jeon.jpg" alt="">
+                    </div>
+                    <div class="iteminfo">
+                        <div class="iconbox1">
+                            <span>이벤트</span>
+                            <span>인기상품</span>
+                            <span>1+1</span>
+                        </div>
+                        <div class="iconbox2">
+                            <div>
+                                <div class="icon empty active">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <div class="icon filled">
+                                    <i class="fa-solid fa-heart"></i>
+                                </div>
+                                <div class="hint">
+                                    <div></div>
+                                    <span>찜하기</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="title">
+                            <h3>풀무원 철판 오징어부추전 <br>(300G)</h3>
+                        </div>
+                        <!-- <div class="discount">
+                            20%
+                        </div> -->
+                        <div class="price">
+                            <!-- <div class="prv">
+                                <span>2000원</span>
+                            </div> -->
+                            <div class="now">5,980원</div>
+                        </div>
+                        <div class="rate">
+                            <i class="fa-solid fa-star"></i>
+                            <span>4.9 (1,200)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="label">TOP<br>1</div>
+                    <div class="imgbox">
+                        <img src="images/steak.jpg" alt="">
+                    </div>
+                    <div class="iteminfo">
+                        <div class="iconbox1">
+                            <span>이벤트</span>
+                            <span>인기상품</span>
+                            <span>1+1</span>
+                        </div>
+                        <div class="iconbox2">
+                            <div>
+                                <div class="icon empty active">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <div class="icon filled">
+                                    <i class="fa-solid fa-heart"></i>
+                                </div>
+                                <div class="hint">
+                                    <div></div>
+                                    <span>찜하기</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="title">
+                            <h3>삼립 시티델리 육즙가득 함박스테이크 (150G)</h3>
+                        </div>
+                        <!-- <div class="discount">
+                            20%
+                        </div> -->
+                        <div class="price">
+                            <!-- <div class="prv">
+                                <span>2000원</span>
+                            </div> -->
+                            <div class="now">3,980원</div>
+                        </div>
+                        <div class="rate">
+                            <i class="fa-solid fa-star"></i>
+                            <span>4.9 (1,200)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="label">TOP<br>1</div>
+                    <div class="imgbox">
+                        <img src="images/pong.jpg" alt="">
+                    </div>
+                    <div class="iteminfo">
+                        <div class="iconbox1">
+                            <span>이벤트</span>
+                            <span>인기상품</span>
+                            <span>1+1</span>
+                        </div>
+                        <div class="iconbox2">
+                            <div>
+                                <div class="icon empty active">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <div class="icon filled">
+                                    <i class="fa-solid fa-heart"></i>
+                                </div>
+                                <div class="hint">
+                                    <div></div>
+                                    <span>찜하기</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="title">
+                            <h3>수퍼테크 액체세제 리필 (일반) (2.6L)</h3>
+                        </div>
+                        <!-- <div class="discount">
+                            20%
+                        </div> -->
+                        <div class="price">
+                            <!-- <div class="prv">
+                                <span>2000원</span>
+                            </div> -->
+                            <div class="now">13,300원</div>
+                        </div>
+                        <div class="rate">
+                            <i class="fa-solid fa-star"></i>
+                            <span>4.9 (1,200)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="label">TOP<br>1</div>
+                    <div class="imgbox">
+                        <img src="images/loc.jpg" alt="">
+                    </div>
+                    <div class="iteminfo">
+                        <div class="iconbox1">
+                            <span>이벤트</span>
+                            <span>인기상품</span>
+                            <span>1+1</span>
+                        </div>
+                        <div class="iconbox2">
+                            <div>
+                                <div class="icon empty active">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <div class="icon filled">
+                                    <i class="fa-solid fa-heart"></i>
+                                </div>
+                                <div class="hint">
+                                    <div></div>
+                                    <span>찜하기</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="title">
+                            <h3>유한락스 곰팡이 제거제 (718ML*2)</h3>
+                        </div>
+                        <!-- <div class="discount">
+                            20%
+                        </div> -->
+                        <div class="price">
+                            <!-- <div class="prv">
+                                <span>2000원</span>
+                            </div> -->
+                            <div class="now">7,200원</div>
+                        </div>
+                        <div class="rate">
+                            <i class="fa-solid fa-star"></i>
+                            <span>4.9 (1,200)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <aside class="history"></aside>
+    <footer></footer>
+
+    <script src="js/hot-product.js"></script>
+    <script src="js/top.js"></script>
+    <script src="js/history.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/category.js"></script>
+    <script src="js/footer.js"></script>
+</body>
+</html>
